@@ -61,10 +61,127 @@ const fpDay = function(uPlanet , pMonth) {
     if(uPlanet === "Mars") {
       console.log("In Mars if statement")
       switch(pMonth) {
-
+        case "January":
+          fmDay = 1;
+          break;
+        case "February":
+          fmDay = 22;
+        case "April":
+          fmDay = 10;
+          break;
+        case "August":
+          fmDay = 4;
+          break;
+        case "July":
+          fmDay = 1;
+        case "December":
+          fmDay = 6;
+        default:
+          throw new Error(`Invalid month ${pMonth} for planet Mars`)
       }
     }
-    return fmDay;
+    if(uPlanet === "Jupiter") {
+      console.log("In Jupiter if statement")
+      switch(pMonth) {
+        case "January":
+          fmDay = 1;
+          break;
+        case "February":
+          fmDay = 22;
+        case "April":
+          fmDay = 28;
+          break;
+        case "August":
+          fmDay = 4;
+          break;
+        case "June":
+          fmDay = 8;
+          break;
+      
+        case "November":
+          fmDay = 1;
+          break;
+        case "December":
+          fmDay = 6;
+          break;
+        default:
+          throw new Error(`Invalid month ${pMonth} for planet Jupiter`)
+      }
+    }
+    if(uPlanet === "Saturn") {
+      console.log("In Saturn if statement")
+      switch(pMonth) {
+        case "January":
+          fmDay = 1;
+          break;
+        case "February":
+          fmDay = 11;
+          break;
+        case "March":
+          fmDay = 17;
+          break;
+        case "April":
+          fmDay = 28;
+          break;
+        case "August":
+          fmDay = 4;
+          break;
+        case "June":
+          fmDay = 8;
+          break;
+        case "September":
+          fmDay = 8;
+          break;
+        case "October":
+          fmDay = 1;
+          break;
+        case "November":
+          fmDay = 1;
+          break;
+        case "December":
+          fmDay = 31;
+          break;
+        default:
+          throw new Error(`Invalid month ${pMonth} for planet Saturn`)
+      }
+    }
+    if(uPlanet === "Uranus") {
+      console.log("In Uranus if statement")
+      switch(pMonth) {
+        case "January":
+          fmDay = 1;
+          break;
+        case "February":
+          fmDay = 1-31;
+          break;
+        case "March":
+          fmDay = 1;
+          break;
+        case "April":
+          fmDay = 28;
+          break;
+        case "August":
+          fmDay = 4;
+          break;
+        case "June":
+          fmDay = 8;
+          break;
+        case "September":
+          fmDay = 8;
+          break;
+        case "October":
+          fmDay = 1;
+          break;
+        case "November":
+          fmDay = 1;
+          break;
+        case "December":
+          fmDay = 31;
+          break;
+        default:
+          throw new Error(`Invalid month ${pMonth} for planet Uranus`)
+      }
+    }
 }
   //Another function switch statement to get the last day of the months of each planet
   const pDay = function(uMonth, uPlanet) { 
