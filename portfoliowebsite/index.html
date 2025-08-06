@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-App Week 5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <script type="module" src ="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello my name is Caleb!</h1>
+    <div class="clock">
+        <span class="clock-time"></span>
+        <span class="clock-ampm"></span>
+    </div>
+    <form id = "userName">
+        <fieldset>
+            <div>
+                <label>Like to leave your email?</label>
+                <input type="text" id="nameInput" placeholder="Enter your email">
+                <span id ="nameError" class="error"></span>
+            </div>
+            <div>
+                <label>Like to leave something in message?</label>
+                <textarea id="messageInput" placeholder="Hi I'm Message"></textarea>
+                <span id ="messageError" class="error"></span>
+            </div>
+             <button type="submit">Submit</button> <br>
+             <span id ="SubmitError" class= "error"></span>
+        </fieldset>
+    </form>
+    <div id="output"></div>
+    <div id="tab-data"></div>
+</body>
+</html>
